@@ -1,0 +1,83 @@
+@font-face {
+    font-family: "feuillet";
+    src: url("/Notedry Base.ttf");
+}
+body{
+    width: auto;
+    height: auto;
+}
+.borderBleu{
+    border: 10px groove rgb(38, 43, 114);
+    border-radius: 5px;
+}
+
+.borderNoir{
+    border: 5px groove rgb(60, 60, 69);
+    border-radius: 5px;
+}
+.borderGris{
+    border: 5px groove rgb(161, 161, 167);
+    border-radius: 5px;
+}
+h1{
+    font-family: "feuillet";
+}
+
+.animation1{
+    color: black;
+    transform: scale(1) rotate(0) translate(0px,0px) skew(0deg);
+    transition-duration: 2s;
+    opacity: 100%;
+}
+.animation1:hover{
+    color:blue;
+    transform: scale(0.85) rotate(10deg) translate(-100px,0px) skew(50deg);
+    opacity: 70%;
+}
+
+.animation2{
+    width: 20px;
+    height: 20px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png");
+    background-size: cover;
+}
+
+.animation2:hover{
+    width: 20px;
+    height: 20px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/2491px-Logo_of_Twitter.svg.png");
+    background-size: cover;
+}
+
+@keyframes arcenciel
+{
+0%{color:black;}
+20%{color:rgb(255, 0, 0);}
+25%{color:rgb(255, 255, 0);}
+45%{color:rgb(0, 255, 106);}
+75%{color:rgb(25, 0, 255);}
+100%{color:rgb(255, 0, 162);}
+}
+@keyframes arcencielbis
+{
+0%{color:rgb(255, 0, 0);}
+25%{color:rgb(255, 255, 0);}
+45%{color:rgb(0, 255, 106);}
+75%{color:rgb(25, 0, 255);}
+100%{color:rgb(255, 0, 162);}
+}
+.animation3{
+    animation-name: arcenciel;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-in;
+}
+
+.retour{
+    position: fixed;
+    bottom:0;
+    right:0;
+    z-index: 99;
+    background-color: white;
+}

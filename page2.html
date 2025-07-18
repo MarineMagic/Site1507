@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>mon wireframe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="style2.css" rel="stylesheet"> 
+</head>
+
+<body class="bg-gradient-to-r from-orange-50 to-teal-100">
+  <!-- header -->
+  <header>
+    <h1 class="bg-teal-400 text-3xl font-bold text-center py-8">Mon site perso</h1>
+    <nav class="bg-teal-200">
+      <ul class="flex justify-end space-x-10 p-4">
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Page 1</a></li>
+        <li><a href="#">Page 2</a></li>
+        <li><a href="/page3.html">Page 3</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- corps de page -->
+  <main class="bg-orange-100 border-solid border-2 border-orange-200 mx-40 my-12">
+    <h2 class="text-xl font-semibold p-4">Mes passions :</h2>
+    <!-- 1ere section avec la grille d'images -->
+    <section class="grid grid-cols-4 gap-4">
+      <div>
+        <h3 class="text-lg font-semibold text-teal-600 mb-4">Silent Voice</h3>
+        <img src="images/silent-voice.jfif" />
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-teal-600 mb-4">Violet Evergarden</h3>
+        <img src="images/violet.jfif" />
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-teal-600 mb-4">Neon Genesis Evangelion</h3>
+        <img src="images/evangelion.jfif" />
+      </div>     
+    </section>
+    <hr class="border-solid border-2 border-orange-200 content-center my-8 mx-24">
+    <!-- 2e section avec grande image + texte -->
+    <section class="flex justify-center">
+      <div class="pr-4">
+        <img src="images/minecraft.jfif"/>
+      </div>
+      <div class="w-1/4">
+        <h3 class="text-lg text-teal-600 font-semibold pb-4">Mon Monde Minecraft</h3>
+        <p>Plus de 1200 heures de jeux à ce jour sur la création de mon monde parfait.</p>
+        <br>
+        <p>Exclusivement fait en mode créatif, mon but est de créer un monde digne d'un RPG !</p>
+      </div>
+    </section>
+    <hr class="border-solid border-2 border-orange-200 content-center my-8 mx-24">
+    <!-- Section BONUS -->
+    <section>
+      <!-- code personnel des makers -->
+    </section>    
+  </main>
+  
+  <!-- footer -->
+  <footer class="bg-teal-400 text-lg text-center mt_8 py-10">
+    <p>Copyright Truchmuch'&copy;</p>
+    <p>Contact : truchmuch@gmail.com</p>
+  </footer>
+
+</body>
+
+</html>
